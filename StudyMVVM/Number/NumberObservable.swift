@@ -9,19 +9,19 @@ import Foundation
 
 class NumberObservable {
     
-    var closure: (() -> Void)?
-    var text: String? {
+    private var closure: ((String) -> Void)?
+    var text: String {
         didSet {
-            closure?()
+            closure?(text)
         }
     }
     
-    init(text: String?) {
+    init(_ text: String) {
         self.text = text
     }
     
-    func bind(_ closure: @escaping () -> Void) {
-        closure()
+    func bind(_ closure: @escaping (String) -> Void) {
+        closure(text)
         self.closure = closure
     }
 }

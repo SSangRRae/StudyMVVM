@@ -32,8 +32,8 @@ class NumberViewController: UIViewController {
         
         numberTextField.delegate = self
         
-        viewModel.outputText.bind {
-            self.resultLabel.text = self.viewModel.outputText.text
+        viewModel.outputText.bind { value in
+            self.resultLabel.text = value
         }
     }
 }
