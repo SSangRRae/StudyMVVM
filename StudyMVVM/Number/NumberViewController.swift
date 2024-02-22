@@ -21,6 +21,8 @@ class NumberViewController: UIViewController {
         return view
     }()
     
+    let viewModel = NumberViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -34,23 +36,8 @@ class NumberViewController: UIViewController {
 
 extension NumberViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        guard let text = numberTextField.text else { return }
-        
-        if text.isEmpty {
-            resultLabel.text = "값을 입력해주세요"
-            return
-        }
-        
-        guard let num = Int(text) else {
-            resultLabel.text = "숫자만 입력해주세요"
-            return
-        }
-        
-        if 0 < num && num <= 1000000 {
-            resultLabel.text = num.formatted()
-        } else {
-            resultLabel.text = "1,000,000 이하로 입력해주세요"
-        }
+        viewModel.inputText = textField.text!
+        resultLabel.text = viewModel.outputText
     }
 }
 

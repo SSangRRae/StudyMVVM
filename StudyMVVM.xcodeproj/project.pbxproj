@@ -16,6 +16,8 @@
 		EC8FB8162B873CD6001F2EBD /* SignUpObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8152B873CD6001F2EBD /* SignUpObservable.swift */; };
 		EC8FB8182B873CE2001F2EBD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */; };
 		EC8FB81C2B874ED5001F2EBD /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */; };
+		EC8FB8202B876E19001F2EBD /* NumberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB81F2B876E19001F2EBD /* NumberViewModel.swift */; };
+		EC8FB8222B876E27001F2EBD /* NumberObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8212B876E27001F2EBD /* NumberObservable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		EC8FB8152B873CD6001F2EBD /* SignUpObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpObservable.swift; sourceTree = "<group>"; };
 		EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
+		EC8FB81F2B876E19001F2EBD /* NumberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewModel.swift; sourceTree = "<group>"; };
+		EC8FB8212B876E27001F2EBD /* NumberObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberObservable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,8 @@
 			isa = PBXGroup;
 			children = (
 				EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */,
+				EC8FB81F2B876E19001F2EBD /* NumberViewModel.swift */,
+				EC8FB8212B876E27001F2EBD /* NumberObservable.swift */,
 			);
 			path = Number;
 			sourceTree = "<group>";
@@ -173,6 +179,8 @@
 				EC8FB81C2B874ED5001F2EBD /* NumberViewController.swift in Sources */,
 				EC8FB7FD2B873849001F2EBD /* AppDelegate.swift in Sources */,
 				EC8FB7FF2B873849001F2EBD /* SceneDelegate.swift in Sources */,
+				EC8FB8202B876E19001F2EBD /* NumberViewModel.swift in Sources */,
+				EC8FB8222B876E27001F2EBD /* NumberObservable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
