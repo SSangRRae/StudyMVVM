@@ -13,14 +13,12 @@ class SignUpViewModel {
     var outputText = Observable("")
     
     init() {
-        inputText.bind {
-            self.validation()
+        inputText.bind { value in
+            self.validation(value)
         }
     }
     
-    private func validation() {
-        let text = inputText.text
-        
+    private func validation(_ text: String) {
         if text.isEmpty {
             outputText.text = "닉네임을 입력해주세요"
             return

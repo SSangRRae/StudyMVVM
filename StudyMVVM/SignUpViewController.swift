@@ -37,8 +37,8 @@ class SignUpViewController: UIViewController {
         configureConstraints()
         nicknameTextField.delegate = self
         
-        viewModel.outputText.bind {
-            self.validLabel.text = self.viewModel.outputText.text
+        viewModel.outputText.bind { value in
+            self.validLabel.text = value
         }
     }
 }

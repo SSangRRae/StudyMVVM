@@ -9,11 +9,11 @@ import Foundation
 
 class Observable {
     
-    var closure: (() -> Void)?
+    var closure: ((String) -> Void)?
     
     var text: String {
         didSet {
-            closure?()
+            closure?(text)
         }
     }
     
@@ -21,8 +21,8 @@ class Observable {
         self.text = text
     }
     
-    func bind(_ closure: @escaping () -> Void) {
-        closure()
+    func bind(_ closure: @escaping (String) -> Void) {
+        closure(text)
         self.closure = closure
     }
 }
