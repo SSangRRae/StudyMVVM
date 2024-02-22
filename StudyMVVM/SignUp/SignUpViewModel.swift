@@ -9,8 +9,8 @@ import Foundation
 
 class SignUpViewModel {
     
-    var inputText = Observable("")
-    var outputText = Observable("")
+    var inputText = SignUpObservable("")
+    var outputText = SignUpObservable("")
     
     init() {
         inputText.bind { value in

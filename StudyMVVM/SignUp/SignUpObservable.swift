@@ -7,7 +7,7 @@
 
 import Foundation
 
-class Observable {
+class SignUpObservable {
     
     var closure: ((String) -> Void)?
     

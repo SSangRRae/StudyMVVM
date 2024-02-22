@@ -13,8 +13,9 @@
 		EC8FB8092B87384A001F2EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */; };
 		EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */; };
 		EC8FB8142B873AAA001F2EBD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC8FB8132B873AAA001F2EBD /* SnapKit */; };
-		EC8FB8162B873CD6001F2EBD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8152B873CD6001F2EBD /* Observable.swift */; };
+		EC8FB8162B873CD6001F2EBD /* SignUpObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8152B873CD6001F2EBD /* SignUpObservable.swift */; };
 		EC8FB8182B873CE2001F2EBD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */; };
+		EC8FB81C2B874ED5001F2EBD /* NumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +26,9 @@
 		EC8FB8082B87384A001F2EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8FB80A2B87384A001F2EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		EC8FB8152B873CD6001F2EBD /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EC8FB8152B873CD6001F2EBD /* SignUpObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpObservable.swift; sourceTree = "<group>"; };
 		EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
+		EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,16 +62,33 @@
 		EC8FB7FB2B873849001F2EBD /* StudyMVVM */ = {
 			isa = PBXGroup;
 			children = (
+				EC8FB81E2B874F26001F2EBD /* Number */,
+				EC8FB81D2B874F13001F2EBD /* SignUp */,
 				EC8FB7FC2B873849001F2EBD /* AppDelegate.swift */,
 				EC8FB7FE2B873849001F2EBD /* SceneDelegate.swift */,
 				EC8FB8052B87384A001F2EBD /* Assets.xcassets */,
 				EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */,
 				EC8FB80A2B87384A001F2EBD /* Info.plist */,
-				EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */,
-				EC8FB8152B873CD6001F2EBD /* Observable.swift */,
-				EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */,
 			);
 			path = StudyMVVM;
+			sourceTree = "<group>";
+		};
+		EC8FB81D2B874F13001F2EBD /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */,
+				EC8FB8152B873CD6001F2EBD /* SignUpObservable.swift */,
+				EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */,
+			);
+			path = SignUp;
+			sourceTree = "<group>";
+		};
+		EC8FB81E2B874F26001F2EBD /* Number */ = {
+			isa = PBXGroup;
+			children = (
+				EC8FB81B2B874ED5001F2EBD /* NumberViewController.swift */,
+			);
+			path = Number;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,9 +167,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8FB8162B873CD6001F2EBD /* Observable.swift in Sources */,
+				EC8FB8162B873CD6001F2EBD /* SignUpObservable.swift in Sources */,
 				EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */,
 				EC8FB8182B873CE2001F2EBD /* SignUpViewModel.swift in Sources */,
+				EC8FB81C2B874ED5001F2EBD /* NumberViewController.swift in Sources */,
 				EC8FB7FD2B873849001F2EBD /* AppDelegate.swift in Sources */,
 				EC8FB7FF2B873849001F2EBD /* SceneDelegate.swift in Sources */,
 			);
