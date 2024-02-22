@@ -12,6 +12,9 @@
 		EC8FB8062B87384A001F2EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8052B87384A001F2EBD /* Assets.xcassets */; };
 		EC8FB8092B87384A001F2EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */; };
 		EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */; };
+		EC8FB8142B873AAA001F2EBD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = EC8FB8132B873AAA001F2EBD /* SnapKit */; };
+		EC8FB8162B873CD6001F2EBD /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8152B873CD6001F2EBD /* Observable.swift */; };
+		EC8FB8182B873CE2001F2EBD /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,8 @@
 		EC8FB8082B87384A001F2EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8FB80A2B87384A001F2EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EC8FB8152B873CD6001F2EBD /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8FB8142B873AAA001F2EBD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +66,8 @@
 				EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */,
 				EC8FB80A2B87384A001F2EBD /* Info.plist */,
 				EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */,
+				EC8FB8152B873CD6001F2EBD /* Observable.swift */,
+				EC8FB8172B873CE2001F2EBD /* SignUpViewModel.swift */,
 			);
 			path = StudyMVVM;
 			sourceTree = "<group>";
@@ -80,6 +88,9 @@
 			dependencies = (
 			);
 			name = StudyMVVM;
+			packageProductDependencies = (
+				EC8FB8132B873AAA001F2EBD /* SnapKit */,
+			);
 			productName = StudyMVVM;
 			productReference = EC8FB7F92B873849001F2EBD /* StudyMVVM.app */;
 			productType = "com.apple.product-type.application";
@@ -108,6 +119,9 @@
 				Base,
 			);
 			mainGroup = EC8FB7F02B873849001F2EBD;
+			packageReferences = (
+				EC8FB8122B873AAA001F2EBD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = EC8FB7FA2B873849001F2EBD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -134,7 +148,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC8FB8162B873CD6001F2EBD /* Observable.swift in Sources */,
 				EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */,
+				EC8FB8182B873CE2001F2EBD /* SignUpViewModel.swift in Sources */,
 				EC8FB7FD2B873849001F2EBD /* AppDelegate.swift in Sources */,
 				EC8FB7FF2B873849001F2EBD /* SceneDelegate.swift in Sources */,
 			);
@@ -357,6 +373,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EC8FB8122B873AAA001F2EBD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EC8FB8132B873AAA001F2EBD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EC8FB8122B873AAA001F2EBD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EC8FB7F12B873849001F2EBD /* Project object */;
 }
