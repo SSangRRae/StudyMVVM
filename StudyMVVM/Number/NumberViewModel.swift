@@ -9,16 +9,17 @@ import Foundation
 
 class NumberViewModel {
     
-    var inputText = "" {
-        didSet {
-            invalidation()
+    var inputText = NumberObservable(text: "")
+    var outputText = ""
+    
+    init() {
+        inputText.bind {
+            self.validation()
         }
     }
     
-    var outputText = ""
-    
-    private func invalidation() {
-        let text = inputText
+    private func validation() {
+        guard let text = inputText.text else { return }
         
         if text.isEmpty {
             outputText = "값을 입력해주세요"

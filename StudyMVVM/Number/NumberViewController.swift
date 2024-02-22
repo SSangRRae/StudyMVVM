@@ -36,7 +36,7 @@ class NumberViewController: UIViewController {
 
 extension NumberViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        viewModel.inputText = textField.text!
+        viewModel.inputText.text = textField.text!
         resultLabel.text = viewModel.outputText
     }
 }
