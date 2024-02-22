@@ -36,13 +36,16 @@ class SignUpViewController: UIViewController {
         configureHierarchy()
         configureConstraints()
         nicknameTextField.delegate = self
+        
+        viewModel.outputText.bind {
+            self.validLabel.text = self.viewModel.outputText.text
+        }
     }
 }
 
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         viewModel.inputText.text = nicknameTextField.text!
-        validLabel.text = viewModel.outputText
     }
 }
 

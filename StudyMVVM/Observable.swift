@@ -10,17 +10,19 @@ import Foundation
 class Observable {
     
     var closure: (() -> Void)?
+    
     var text: String {
         didSet {
             closure?()
         }
     }
     
-    init(text: String) {
+    init(_ text: String) {
         self.text = text
     }
     
     func bind(_ closure: @escaping () -> Void) {
+        closure()
         self.closure = closure
     }
 }
