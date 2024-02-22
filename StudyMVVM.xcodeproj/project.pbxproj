@@ -9,21 +9,19 @@
 /* Begin PBXBuildFile section */
 		EC8FB7FD2B873849001F2EBD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB7FC2B873849001F2EBD /* AppDelegate.swift */; };
 		EC8FB7FF2B873849001F2EBD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB7FE2B873849001F2EBD /* SceneDelegate.swift */; };
-		EC8FB8012B873849001F2EBD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8002B873849001F2EBD /* ViewController.swift */; };
-		EC8FB8042B873849001F2EBD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8022B873849001F2EBD /* Main.storyboard */; };
 		EC8FB8062B87384A001F2EBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8052B87384A001F2EBD /* Assets.xcassets */; };
 		EC8FB8092B87384A001F2EBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */; };
+		EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		EC8FB7F92B873849001F2EBD /* StudyMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StudyMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC8FB7FC2B873849001F2EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EC8FB7FE2B873849001F2EBD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC8FB8002B873849001F2EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC8FB8032B873849001F2EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EC8FB8052B87384A001F2EBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC8FB8082B87384A001F2EBD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC8FB80A2B87384A001F2EBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +56,10 @@
 			children = (
 				EC8FB7FC2B873849001F2EBD /* AppDelegate.swift */,
 				EC8FB7FE2B873849001F2EBD /* SceneDelegate.swift */,
-				EC8FB8002B873849001F2EBD /* ViewController.swift */,
-				EC8FB8022B873849001F2EBD /* Main.storyboard */,
 				EC8FB8052B87384A001F2EBD /* Assets.xcassets */,
 				EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */,
 				EC8FB80A2B87384A001F2EBD /* Info.plist */,
+				EC8FB8102B8738DA001F2EBD /* SignUpViewController.swift */,
 			);
 			path = StudyMVVM;
 			sourceTree = "<group>";
@@ -127,7 +124,6 @@
 			files = (
 				EC8FB8092B87384A001F2EBD /* LaunchScreen.storyboard in Resources */,
 				EC8FB8062B87384A001F2EBD /* Assets.xcassets in Resources */,
-				EC8FB8042B873849001F2EBD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC8FB8012B873849001F2EBD /* ViewController.swift in Sources */,
+				EC8FB8112B8738DA001F2EBD /* SignUpViewController.swift in Sources */,
 				EC8FB7FD2B873849001F2EBD /* AppDelegate.swift in Sources */,
 				EC8FB7FF2B873849001F2EBD /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +143,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC8FB8022B873849001F2EBD /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC8FB8032B873849001F2EBD /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC8FB8072B87384A001F2EBD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,9 +284,9 @@
 				INFOPLIST_FILE = StudyMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +294,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olrae.StudyMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -323,9 +315,9 @@
 				INFOPLIST_FILE = StudyMVVM/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +325,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.olrae.StudyMVVM;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
