@@ -41,7 +41,7 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        viewModel.inputText = nicknameTextField.text!
+        viewModel.inputText.text = nicknameTextField.text!
         validLabel.text = viewModel.outputText
     }
 }

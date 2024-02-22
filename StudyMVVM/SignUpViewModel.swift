@@ -9,16 +9,18 @@ import Foundation
 
 class SignUpViewModel {
     
-    var inputText = "" {
-        didSet {
-            validation()
-        }
-    }
+    var inputText = Observable(text: "")
     
     var outputText = ""
     
+    init() {
+        inputText.bind {
+            self.validation()
+        }
+    }
+    
     private func validation() {
-        let text = inputText
+        let text = inputText.text
         
         if text.isEmpty {
             outputText = "닉네임을 입력해주세요"
