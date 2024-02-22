@@ -31,13 +31,16 @@ class NumberViewController: UIViewController {
         configureConstraints()
         
         numberTextField.delegate = self
+        
+        viewModel.outputText.bind {
+            self.resultLabel.text = self.viewModel.outputText.text
+        }
     }
 }
 
 extension NumberViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
         viewModel.inputText.text = textField.text!
-        resultLabel.text = viewModel.outputText
     }
 }
 

@@ -21,6 +21,7 @@ class NumberObservable {
     }
     
     func bind(_ closure: @escaping () -> Void) {
+        closure()
         self.closure = closure
     }
 }
