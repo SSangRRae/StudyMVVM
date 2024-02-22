@@ -27,6 +27,8 @@ class SignUpViewController: UIViewController {
         return view
     }()
     
+    let viewModel = SignUpViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -39,24 +41,8 @@ class SignUpViewController: UIViewController {
 
 extension SignUpViewController: UITextFieldDelegate {
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        guard let text = textField.text else { return }
-        
-        if text.isEmpty {
-            validLabel.text = "닉네임을 입력해주세요"
-            return
-        }
-        
-        if text.contains("@") || text.contains("!") {
-            validLabel.text = "특수문자는 입력할 수 없습니다."
-            return
-        }
-        
-        if 5 <= text.count && text.count < 10 {
-            validLabel.text = "사용할 수 있는 닉네임입니다."
-        } else {
-            validLabel.text = "5글자 이상 10글자 미만으로 입력해주세요"
-        }
-        
+        viewModel.inputText = nicknameTextField.text!
+        validLabel.text = viewModel.outputText
     }
 }
 
